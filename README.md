@@ -17,4 +17,4 @@ If the user closes the app or reboots the phone, the malicious Jawar service kee
 - Works for Android 5.0 and above
 - The malicious background service only starts if the phone has any kind of connection to the network/Internet.
 - This service runs periodically (the period is changeable)
-- It is persistent, Jawar's malicious service keeps executing even if the app is closed or the phone is rebooted) (thanks to [scheduled services](https://developer.android.com/guide/components/services.html) of Android).  
+- It is persistent, Jawar's malicious service keeps executing even if the app is closed or the phone is rebooted (Thanks to [scheduled services](https://developer.android.com/guide/components/services.html) of Android).  
