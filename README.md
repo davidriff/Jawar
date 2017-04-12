@@ -4,6 +4,6 @@ Jawar is a malware for Android. It is supposed to be an app for audio notes, so 
 
 # What does it do ?
 
-Jawar **always** keeps a service running in background, and records all the time using the microphone (remember that you granted permission for it).
+Jawar **always** keeps a service running in background and constantly records using the microphone (remember that user granted permission for it).
 After recording, Jawar sends the audio file through TCP to a remote server.
-If the user closes the app or reboots the phone, the malicious Jawar service keeps running.  
+If the user closes the app or reboots the phone, the malicious Jawar service keeps running (thanks to [scheduled services](https://developer.android.com/guide/components/services.html) of Android).  
