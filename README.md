@@ -23,7 +23,7 @@ You can program something easy in any lenguage, here is an example in bash (you 
 
 i=1
 while [ True ]; do
-	nc -l -p 4444 > /home/pi/Desktop/audio$i.txt
+	nc -l -p 4444 > ~/Desktop/audio$i.txt
 	i=$((i+1))
 done
 ```
