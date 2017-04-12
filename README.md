@@ -4,7 +4,7 @@ Jawar is a malware for Android.
 
 # Disclaimer
 
-This software is a proof of concept, I take no responsabilities for the misuse you can give it.
+This software is a proof of concept and should never be used in a real environnement, I take no responsabilities for the misuse you can give it.
 
 # How does it work?
 
