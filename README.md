@@ -8,8 +8,8 @@ The attacker would show you the app as a tool for recording audio notes, so duri
 
 # What does it do ?
 
-Jawar **always** keeps a service running in background and constantly records using the microphone (remember that user granted permission for it).
-After recording, Jawar sends the audio file through TCP to a remote server. 
+Jawar **always** keeps a service running in background and constantly records user's life using his microphone (remember that user granted permission for it).
+After recording, Jawar sends the audio file to a remote server using TCP sockets. 
 
 # More info
 
