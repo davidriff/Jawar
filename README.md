@@ -23,3 +23,4 @@ After recording, Jawar sends the audio file to a remote server using TCP sockets
 
 - Check what happens if Jawar is recording and user opens an app that needs the microphone (or starts a phone call).
 - Give it a real *legitim* functionnality, so the app will be more credible.
+- ~~Upload it to the PlayStore.~~
