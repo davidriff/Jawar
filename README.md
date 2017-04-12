@@ -1,6 +1,6 @@
 # Jawar
 
-Jawar is a malware for Android.
+Jawar is a proof of concept of malware for Android.
 
 # How does it work?
 
