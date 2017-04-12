@@ -18,7 +18,8 @@ After recording, Jawar sends the audio file to a remote server using TCP sockets
 # Server (audio receiver)
 
 You can program something easy in any lenguage, here is an example in bash (you will need netcat):
-``` #!/bin/bash
+``` bash
+#!/bin/bash
 
 i=1
 while [ True ]; do
