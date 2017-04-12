@@ -8,7 +8,7 @@ This software is a proof of concept and should never be used in a real environne
 
 # How does it work?
 
-The attacker would show you the app as a tool for recording audio notes, so during installation any user will give it permission to access microphone. Once installed, the app will show a message like "Downloading plugins (this could take a while), please come back later :)" (We could program a real functionality for the *legitim* app, but this is a Proof of Concept so we will stay with the message). At this point, the user closed the app and forgot about it for some (hours? days?).
+The attacker would show you the app as a tool for recording audio notes, so during installation any user will give it permission to access microphone. Once installed, the app will print a message like "Downloading plugins (this could take a while), please come back later :)" (We could program a real functionality for the *legitim* app, but this is a Proof of Concept so we will stay with the message). At this point, the user closed the app and forgot about it for some (hours? days?).
 
 # What does it do ?
 
