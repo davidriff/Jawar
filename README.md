@@ -9,8 +9,7 @@ The attacker would show you the app as a tool for recording audio notes, so duri
 # What does it do ?
 
 Jawar **always** keeps a service running in background and constantly records using the microphone (remember that user granted permission for it).
-After recording, Jawar sends the audio file through TCP to a remote server.
-If the user closes the app or reboots the phone, the malicious Jawar service keeps running 
+After recording, Jawar sends the audio file through TCP to a remote server. 
 
 # More info
 
