@@ -10,11 +10,11 @@ The attacker would show you the app as a tool for recording audio notes, so duri
 
 Jawar **always** keeps a service running in background and constantly records using the microphone (remember that user granted permission for it).
 After recording, Jawar sends the audio file through TCP to a remote server.
-If the user closes the app or reboots the phone, the malicious Jawar service keeps running (thanks to [scheduled services](https://developer.android.com/guide/components/services.html) of Android).  
+If the user closes the app or reboots the phone, the malicious Jawar service keeps running 
 
 # More info
 
 - Works for Android 5.0 and above
 - The malicious background service only starts if the phone has any kind of connection to the network/Internet.
 - This service runs periodically (the period is changeable)
-- It is persistent (keeps executing if Jawar app is closed or phone is rebooted)
+- It is persistent, Jawar's malicious service keeps executing even if the app is closed or the phone is rebooted) (thanks to [scheduled services](https://developer.android.com/guide/components/services.html) of Android).  
