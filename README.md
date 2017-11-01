@@ -41,4 +41,4 @@ done
 - Check what happens if Jawar is recording and user opens an app that needs the microphone (or starts a phone call).
 - Give it a real *legitim* functionnality, so the app will be more credible.
 - This PoC was made exclusively for the microphone... What about the camera ?
-- ~~Upload it to the PlayStore.~~ Don't do it. Don't try it. Just don't.
+- ~~Upload it to the PlayStore.~~ 
