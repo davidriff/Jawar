@@ -1,6 +1,6 @@
 # Jawar
 
-Jawar is a malware for Android.
+Jawar is a malware app for Android, as long as the app is installed, it records permanently with the mic and send the audios through TCP. It works even if the app is closed or the phone is rebooted.
 
 # Disclaimer
 
